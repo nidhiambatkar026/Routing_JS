@@ -1,4 +1,13 @@
 import { createRoot } from "react-dom/client";
 
+function App(){
+    const path = window.location.pathname;
+    console.log(path);
+}
+
 const root = createRoot(document.getElementById("root"));
-root.render(<h1>Routing</h1>);
+root.render(
+    <>
+    <App/>
+    </>
+);

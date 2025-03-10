@@ -1,4 +1,9 @@
 import { createRoot } from "react-dom/client";
+import Home from "./views/Home";
+import Dashboard from "./views/Dashboard";
+import Navbar from "./components/navbar";
+import About from "./views/about";
+import Contact from "./views/contact";
 
 function App(){
     const path = window.location.pathname;
@@ -6,6 +11,9 @@ function App(){
 
     if(path == "/"){
         root.render(<Home />)
+    }
+    else if(path == "/navbar"){
+        root.render(<Navbar />)
     }
     else if (path == "/dashboard")
     {
